@@ -1,0 +1,530 @@
+[09/10/2020-12:20:41:723] TRACE [Thread-51]: id: c06fe641-e6c6-49d6-b22c-92eae9d33aad message: java.sql.SQLException: ORA-06550: Строка 1, столбец 11:
+PLS-00905: неприемлемый объект DWH.CRUD_CUSTOMER
+ORA-06550: Строка 1, столбец 7:
+PL/SQL: Statement ignored
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1059)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:522)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:257)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:587)
+	at oracle.jdbc.driver.T4CCallableStatement.doOall8(T4CCallableStatement.java:220)
+	at oracle.jdbc.driver.T4CCallableStatement.doOall8(T4CCallableStatement.java:48)
+	at oracle.jdbc.driver.T4CCallableStatement.executeForRows(T4CCallableStatement.java:938)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1150)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:4798)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:4901)
+	at oracle.jdbc.driver.OracleCallableStatement.execute(OracleCallableStatement.java:5631)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1385)
+	at dao.CustomerDaoImpl.getAllCustomers(CustomerDaoImpl.java:34)
+	at GetAllCustomers_getAllCustomers$1.evaluate(GetAllCustomers_getAllCustomers.java:44)
+	at ua.com.integrity.JavaComputeNode.evaluate(JavaComputeNode.java:85)
+	at com.ibm.broker.javacompute.MbRuntimeJavaComputeNode.evaluate(MbRuntimeJavaComputeNode.java:364)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:1453)
+ 
+[09/10/2020-12:50:22:385] INFO  [Thread-57]: id: ef254bbe-e867-4139-98b4-3f519bc5ddf2 message: customerid null 
+[09/10/2020-13:14:48:218] INFO  [Thread-58]: id: 4c9c0674-583a-4bac-8128-c6575da1a6aa message: customerid MbElement( type: 3000000 name: id value: 1 ) 
+[09/10/2020-13:18:50:176] INFO  [Thread-60]: id: c30c4112-8b79-4032-ba55-20c3f0e339d9 message: customerid 1 
+[09/10/2020-13:21:37:311] INFO  [Thread-62]: id: 9e1124fc-16a4-40b3-a738-b49b12953108 message: customerid 1 
+[09/10/2020-13:22:20:949] INFO  [Thread-62]: id: 798549c1-ae5d-4eb8-b847-021f620a4079 message: customerid 1 
+[09/10/2020-13:22:56:033] INFO  [Thread-62]: id: 4bf077f9-be25-4b36-b156-9310b79e2c51 message: customerid 1 
+[09/10/2020-13:23:19:413] INFO  [Thread-63]: id: b9f6db09-97df-41d2-8943-ae93b4a0386b message: customerid 1 
+[09/10/2020-13:23:26:264] INFO  [Thread-62]: id: 7b5859de-e2a0-4cc2-a77b-2f851e945e97 message: customerid 1 
+[09/10/2020-13:29:10:663] INFO  [Thread-64]: id: 8d78976c-92d0-43dc-9b7e-77a2f52b4e11 message: customerid 1 
+[09/10/2020-13:29:16:981] INFO  [Thread-65]: id: e4db348b-1ef3-4b1d-9a44-65d37695b3f7 message: customerid 1 
+[09/10/2020-13:36:02:065] INFO  [Thread-66]: id: 8cf477b2-59ed-4b49-82f1-6086c672228c message: customerid 2 
+[09/10/2020-13:51:01:553] INFO  [Thread-45]: id: 24999a52-c729-47fb-aa3c-b18bea244524 message: customerid 2 
+[09/10/2020-14:25:37:999] INFO  [Thread-54]: id: 0e2b463c-455c-4245-ba92-bd1b790a75dc message: customerid 5 
+[09/10/2020-14:26:40:140] TRACE [Thread-53]: id: 6aad0915-8f49-42f6-97ac-33b986031dbb message: java.sql.SQLException: операция недопустима: Ordinal binding and Named binding cannot be combined!
+	at oracle.jdbc.driver.OracleCallableStatement.execute(OracleCallableStatement.java:5626)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1385)
+	at dao.CustomerDaoImpl.updateCustomer(CustomerDaoImpl.java:128)
+	at PutCustomers_putCustomers$1.evaluate(PutCustomers_putCustomers.java:53)
+	at ua.com.integrity.JavaComputeNode.evaluate(JavaComputeNode.java:85)
+	at com.ibm.broker.javacompute.MbRuntimeJavaComputeNode.evaluate(MbRuntimeJavaComputeNode.java:364)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:1453)
+ 
+[09/10/2020-14:51:45:010] INFO  [Thread-47]: id: a4521fe3-4da5-4f62-b7e5-e54dc52f1847 message: customerid 5 
+[09/10/2020-14:52:38:531] INFO  [Thread-51]: id: 4919802b-b079-4914-99b0-6b575314084f message: customerid 5 
+[09/10/2020-14:53:41:128] INFO  [Thread-53]: id: 4c5da1f8-2836-4bb1-8556-d365d07add11 message: customerid 5 
+[09/10/2020-14:53:47:361] INFO  [Thread-54]: id: 8ab7b36c-8b12-40f6-9270-d26da1c4a7b2 message: customerid 5 
+[09/10/2020-14:53:54:305] INFO  [Thread-53]: id: e62bc70b-3189-4fe4-a403-6c4fba5bfd6a message: customerid 5 
+[12/10/2020-09:50:46:591] INFO  [Thread-51]: id: b82f48d2-0e9d-4376-95e2-77753a48dc6e message: orderId 1 
+[12/10/2020-09:50:46:606] TRACE [Thread-51]: id: b82f48d2-0e9d-4376-95e2-77753a48dc6e message: java.sql.SQLException: ORA-06550: РЎС‚СЂРѕРєР° 1, СЃС‚РѕР»Р±РµС† 25:
+PLS-00302: РєРѕРјРїРѕРЅРµРЅС‚Р° 'DELETEORDERBYID' РґРѕР»Р¶РЅР° Р±С‹С‚СЊ РѕР±СЉСЏРІР»РµРЅР°
+ORA-06550: РЎС‚СЂРѕРєР° 1, СЃС‚РѕР»Р±РµС† 7:
+PL/SQL: Statement ignored
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1059)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:522)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:257)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:587)
+	at oracle.jdbc.driver.T4CCallableStatement.doOall8(T4CCallableStatement.java:220)
+	at oracle.jdbc.driver.T4CCallableStatement.doOall8(T4CCallableStatement.java:48)
+	at oracle.jdbc.driver.T4CCallableStatement.executeForRows(T4CCallableStatement.java:938)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1150)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:4798)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:4901)
+	at oracle.jdbc.driver.OracleCallableStatement.execute(OracleCallableStatement.java:5631)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1385)
+	at dao.OrderDaoImpl.deleteOrderById(OrderDaoImpl.java:64)
+	at DeleteId_DeleteOrderById$1.evaluate(DeleteId_DeleteOrderById.java:50)
+	at ua.com.integrity.JavaComputeNode.evaluate(JavaComputeNode.java:85)
+	at com.ibm.broker.javacompute.MbRuntimeJavaComputeNode.evaluate(MbRuntimeJavaComputeNode.java:364)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:1453)
+ 
+[12/10/2020-09:53:37:319] INFO  [Thread-53]: id: 55e85eb2-1b49-4be7-b3bf-0ef1e9daf78e message: orderId 1 
+[12/10/2020-10:24:47:414] INFO  [Thread-55]: id: 600e73a3-f9df-4661-a953-54520f9f86be message: customerid 1 
+[12/10/2020-10:48:51:262] INFO  [Thread-57]: id: 9ea594fe-5777-4a56-a23c-9f17b5b7b749 message: customerid 1 
+[12/10/2020-10:48:51:326] TRACE [Thread-57]: id: 9ea594fe-5777-4a56-a23c-9f17b5b7b749 message: java.sql.SQLIntegrityConstraintViolationException: ORA-00001: нарушено ограничение уникальности (DWH.ORDER_PK)
+ORA-06512: на  "DWH.CRUD_CUSTOMER", line 74
+ORA-06512: на  line 1
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1059)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:522)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:257)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:587)
+	at oracle.jdbc.driver.T4CCallableStatement.doOall8(T4CCallableStatement.java:220)
+	at oracle.jdbc.driver.T4CCallableStatement.doOall8(T4CCallableStatement.java:48)
+	at oracle.jdbc.driver.T4CCallableStatement.executeForRows(T4CCallableStatement.java:938)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1150)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:4798)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:4901)
+	at oracle.jdbc.driver.OracleCallableStatement.execute(OracleCallableStatement.java:5631)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1385)
+	at dao.OrderDaoImpl.addOrder(OrderDaoImpl.java:88)
+	at PutOrder_updateOrder$1.evaluate(PutOrder_updateOrder.java:58)
+	at ua.com.integrity.JavaComputeNode.evaluate(JavaComputeNode.java:85)
+	at com.ibm.broker.javacompute.MbRuntimeJavaComputeNode.evaluate(MbRuntimeJavaComputeNode.java:364)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:1453)
+ 
+[12/10/2020-10:50:06:152] INFO  [Thread-59]: id: dac30448-0ab1-4643-929e-0d34d906c788 message: customerid 1 
+[12/10/2020-10:50:46:106] INFO  [Thread-60]: id: 4fdc3071-0ce9-4e3f-9e4d-80d5a563de3e message: customerid 1 
+[12/10/2020-11:26:55:480] INFO  [Thread-61]: id: 7fdf5e62-1e03-46c8-8bd0-7ed26160c2f5 message: customerid 1 
+[12/10/2020-11:26:55:482] TRACE [Thread-61]: id: 7fdf5e62-1e03-46c8-8bd0-7ed26160c2f5 message: java.sql.SQLException: операция недопустима: Ordinal binding and Named binding cannot be combined!
+	at oracle.jdbc.driver.OracleCallableStatement.execute(OracleCallableStatement.java:5626)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1385)
+	at dao.OrderDaoImpl.getOrdersByCustomer(OrderDaoImpl.java:60)
+	at GetOrder_getOrderByCustomerId$1.evaluate(GetOrder_getOrderByCustomerId.java:55)
+	at ua.com.integrity.JavaComputeNode.evaluate(JavaComputeNode.java:85)
+	at com.ibm.broker.javacompute.MbRuntimeJavaComputeNode.evaluate(MbRuntimeJavaComputeNode.java:364)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:1453)
+ 
+[12/10/2020-11:30:06:837] INFO  [Thread-63]: id: b7aa028f-883a-44b2-bd92-3f81b5bd1b40 message: customerid 1 
+[12/10/2020-11:30:06:839] TRACE [Thread-63]: id: b7aa028f-883a-44b2-bd92-3f81b5bd1b40 message: java.sql.SQLException: операция недопустима: Ordinal binding and Named binding cannot be combined!
+	at oracle.jdbc.driver.OracleCallableStatement.execute(OracleCallableStatement.java:5626)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1385)
+	at dao.OrderDaoImpl.getOrdersByCustomer(OrderDaoImpl.java:60)
+	at GetOrder_getOrderByCustomerId$1.evaluate(GetOrder_getOrderByCustomerId.java:55)
+	at ua.com.integrity.JavaComputeNode.evaluate(JavaComputeNode.java:85)
+	at com.ibm.broker.javacompute.MbRuntimeJavaComputeNode.evaluate(MbRuntimeJavaComputeNode.java:364)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:1453)
+ 
+[12/10/2020-11:33:48:016] INFO  [Thread-65]: id: 2e18c00a-5c66-4c78-af6e-06329e37f0e5 message: customerid 1 
+[12/10/2020-11:33:48:022] TRACE [Thread-65]: id: 2e18c00a-5c66-4c78-af6e-06329e37f0e5 message: java.sql.SQLException: операция недопустима: Ordinal binding and Named binding cannot be combined!
+	at oracle.jdbc.driver.OracleCallableStatement.execute(OracleCallableStatement.java:5626)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1385)
+	at dao.OrderDaoImpl.getOrdersByCustomer(OrderDaoImpl.java:60)
+	at GetOrder_getOrderByCustomerId$1.evaluate(GetOrder_getOrderByCustomerId.java:55)
+	at ua.com.integrity.JavaComputeNode.evaluate(JavaComputeNode.java:85)
+	at com.ibm.broker.javacompute.MbRuntimeJavaComputeNode.evaluate(MbRuntimeJavaComputeNode.java:364)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:1453)
+ 
+[12/10/2020-11:36:44:304] INFO  [Thread-67]: id: 59ac9ad8-ce5a-4e51-8bf2-6e9a0a33b147 message: customerid 1 
+[12/10/2020-11:36:44:308] TRACE [Thread-67]: id: 59ac9ad8-ce5a-4e51-8bf2-6e9a0a33b147 message: java.sql.SQLException: операция недопустима: Ordinal binding and Named binding cannot be combined!
+	at oracle.jdbc.driver.OracleCallableStatement.execute(OracleCallableStatement.java:5626)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1385)
+	at dao.OrderDaoImpl.getOrdersByCustomer(OrderDaoImpl.java:60)
+	at GetOrder_getOrderByCustomerId$1.evaluate(GetOrder_getOrderByCustomerId.java:55)
+	at ua.com.integrity.JavaComputeNode.evaluate(JavaComputeNode.java:85)
+	at com.ibm.broker.javacompute.MbRuntimeJavaComputeNode.evaluate(MbRuntimeJavaComputeNode.java:364)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:1453)
+ 
+[12/10/2020-11:42:32:894] INFO  [Thread-69]: id: c39c5765-2859-4eb4-a09b-0b65c52a825d message: customerid 1 
+[12/10/2020-11:43:12:884] INFO  [Thread-70]: id: 9a3f3c8c-4507-4ad0-a119-51f5bc4e82f1 message: customerid 1 
+[12/10/2020-11:43:26:279] INFO  [Thread-69]: id: 7ec32e09-d3ea-4185-8dfc-3b455f030b2c message: customerid 1 
+[12/10/2020-12:12:27:029] INFO  [Thread-72]: id: 8a1077aa-d2a3-4c02-96da-6fa5cebc92aa message: customerid 1 
+[12/10/2020-12:12:52:276] INFO  [Thread-73]: id: bfe364cd-7111-44f2-ab41-12aa654bf290 message: customerid 7 
+[12/10/2020-12:13:25:506] INFO  [Thread-73]: id: 66f482e1-649f-4448-8382-303b654854b2 message: orderId 5 
+[12/10/2020-12:14:59:725] TRACE [Thread-72]: id: fa9df4df-9c23-4871-a31d-2ab2fab64646 message: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "description" (class Model.Customer), not marked as ignorable (5 known properties: "id", "email", "name", "address", "surname"])
+ at [Source: (String)"{"name":"Namiq","description":"Huseynov","email":"gfeehjebfj","address":"jhb"}"; line: 1, column: 32] (through reference chain: Model.Customer["description"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:60)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:822)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1151)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1567)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1545)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:293)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4001)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2992)
+	at PostCustomers_postCustomers$1.evaluate(PostCustomers_postCustomers.java:37)
+	at ua.com.integrity.JavaComputeNode.evaluate(JavaComputeNode.java:85)
+	at com.ibm.broker.javacompute.MbRuntimeJavaComputeNode.evaluate(MbRuntimeJavaComputeNode.java:364)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:1453)
+ 
+[12/10/2020-12:15:47:220] TRACE [Thread-73]: id: 679fde3c-e9ed-44bc-bc89-ae96bec6b0e5 message: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "description" (class Model.Customer), not marked as ignorable (5 known properties: "id", "email", "name", "address", "surname"])
+ at [Source: (String)"{"id":6,"name":"Namiq","description":"Huseynov","email":"gfeehjebfj","address":"jhb"}"; line: 1, column: 39] (through reference chain: Model.Customer["description"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:60)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:822)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1151)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1567)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1545)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:293)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4001)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2992)
+	at PostCustomers_postCustomers$1.evaluate(PostCustomers_postCustomers.java:37)
+	at ua.com.integrity.JavaComputeNode.evaluate(JavaComputeNode.java:85)
+	at com.ibm.broker.javacompute.MbRuntimeJavaComputeNode.evaluate(MbRuntimeJavaComputeNode.java:364)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:1453)
+ 
+[12/10/2020-12:20:27:805] TRACE [Thread-74]: id: f12eb052-c4d5-4534-a077-3bf7b179ab60 message: java.sql.SQLIntegrityConstraintViolationException: ORA-00001: нарушено ограничение уникальности (DWH.CUSTOMER_PK)
+ORA-06512: на  "DWH.CRUD_CUSTOMER", line 15
+ORA-06512: на  line 1
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1059)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:522)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:257)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:587)
+	at oracle.jdbc.driver.T4CCallableStatement.doOall8(T4CCallableStatement.java:220)
+	at oracle.jdbc.driver.T4CCallableStatement.doOall8(T4CCallableStatement.java:48)
+	at oracle.jdbc.driver.T4CCallableStatement.executeForRows(T4CCallableStatement.java:938)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1150)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:4798)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:4901)
+	at oracle.jdbc.driver.OracleCallableStatement.execute(OracleCallableStatement.java:5631)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1385)
+	at dao.CustomerDaoImpl.save(CustomerDaoImpl.java:82)
+	at PostCustomers_postCustomers$1.evaluate(PostCustomers_postCustomers.java:43)
+	at ua.com.integrity.JavaComputeNode.evaluate(JavaComputeNode.java:85)
+	at com.ibm.broker.javacompute.MbRuntimeJavaComputeNode.evaluate(MbRuntimeJavaComputeNode.java:364)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:1453)
+ 
+[12/10/2020-12:21:28:360] INFO  [Thread-74]: id: f0aebf6b-6610-4b39-979f-8dbfac9644d9 message: customerid 0 
+[12/10/2020-12:22:37:340] INFO  [Thread-75]: id: a32dbf8d-1e57-45dc-b496-072df3e753e3 message: customerid 5 
+[12/10/2020-12:22:37:343] TRACE [Thread-75]: id: a32dbf8d-1e57-45dc-b496-072df3e753e3 message: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "decription" (class Model.Order), not marked as ignorable (2 known properties: "order_id", "description"])
+ at [Source: (String)"{"order_id":5,"decription":"pen"}"; line: 1, column: 29] (through reference chain: Model.Order["decription"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:60)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:822)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1151)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1567)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1545)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:293)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4001)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2992)
+	at PostOrder_addOrderforCustomer$1.evaluate(PostOrder_addOrderforCustomer.java:44)
+	at ua.com.integrity.JavaComputeNode.evaluate(JavaComputeNode.java:85)
+	at com.ibm.broker.javacompute.MbRuntimeJavaComputeNode.evaluate(MbRuntimeJavaComputeNode.java:364)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:1453)
+ 
+[12/10/2020-12:24:11:568] INFO  [Thread-74]: id: 8cd3317a-2a30-48ae-929b-685ef0687cb1 message: customerid 5 
+[12/10/2020-12:24:33:923] INFO  [Thread-75]: id: cc0495a7-2ed2-43c9-95e1-57db9b4dc91e message: customerid 5 
+[12/10/2020-12:32:02:746] INFO  [Thread-74]: id: 6d9e17d1-e830-474f-bf65-3e1a51278a1c message: customerid 5 
+[12/10/2020-12:32:17:973] INFO  [Thread-75]: id: 4f0608c7-57e2-4b88-a08e-e70b1f806277 message: customerid 5 
+[12/10/2020-12:32:24:287] INFO  [Thread-74]: id: 4635ac77-3d1a-4416-87d8-337f2c70ba48 message: customerid 5 
+[12/10/2020-12:32:37:734] INFO  [Thread-75]: id: 5ae60a40-b77f-4518-a4bb-492ad1ee159d message: customerid 5 
+[12/10/2020-12:32:43:136] INFO  [Thread-74]: id: 31d54f33-2303-4efa-b8c7-d123fa6207e6 message: customerid 5 
+[12/10/2020-12:33:10:915] INFO  [Thread-75]: id: dd24b46a-aff4-4654-b4ad-4c08b44be5a7 message: orderId 5 
+[12/10/2020-12:33:34:646] INFO  [Thread-75]: id: 0f437894-fe9b-4c6c-ae19-14c7affa1e50 message: customerid 5 
+[12/10/2020-12:35:32:131] INFO  [Thread-75]: id: fbc0504a-78a5-4a5e-b300-b686cda03553 message: customerid 1 
+[12/10/2020-13:10:48:705] INFO  [Thread-45]: id: b56ace73-fe7d-4344-8967-60cb42b303ea message: customerid 5 
+[12/10/2020-13:10:49:105] TRACE [Thread-45]: id: b56ace73-fe7d-4344-8967-60cb42b303ea message: java.lang.NullPointerException
+	at PostOrder_addOrderforCustomer$1.evaluate(PostOrder_addOrderforCustomer.java:56)
+	at ua.com.integrity.JavaComputeNode.evaluate(JavaComputeNode.java:85)
+	at com.ibm.broker.javacompute.MbRuntimeJavaComputeNode.evaluate(MbRuntimeJavaComputeNode.java:364)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:1453)
+ 
+[12/10/2020-13:11:02:867] INFO  [Thread-47]: id: e67e0141-383f-44ba-b291-50e841546536 message: customerid 5 
+[12/10/2020-13:11:02:889] TRACE [Thread-47]: id: e67e0141-383f-44ba-b291-50e841546536 message: java.lang.NullPointerException
+	at PostOrder_addOrderforCustomer$1.evaluate(PostOrder_addOrderforCustomer.java:56)
+	at ua.com.integrity.JavaComputeNode.evaluate(JavaComputeNode.java:85)
+	at com.ibm.broker.javacompute.MbRuntimeJavaComputeNode.evaluate(MbRuntimeJavaComputeNode.java:364)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:1453)
+ 
+[12/10/2020-14:08:28:466] INFO  [Thread-51]: id: 534dfe1b-1b8e-4cca-b6fc-7ae95413fa37 message: customerid 5 
+[12/10/2020-14:08:28:475] TRACE [Thread-51]: id: 534dfe1b-1b8e-4cca-b6fc-7ae95413fa37 message: java.lang.NullPointerException
+	at dao.CustomerDaoImpl.getCustomerById(CustomerDaoImpl.java:86)
+	at GetCustomerById_getCustomerByID$1.evaluate(GetCustomerById_getCustomerByID.java:42)
+	at ua.com.integrity.JavaComputeNode.evaluate(JavaComputeNode.java:85)
+	at com.ibm.broker.javacompute.MbRuntimeJavaComputeNode.evaluate(MbRuntimeJavaComputeNode.java:364)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:1453)
+ 
+[12/10/2020-14:08:45:787] INFO  [Thread-51]: id: 39ed70b5-ba13-4318-84f2-71963a8db09b message: customerid 6 
+[12/10/2020-14:08:45:793] TRACE [Thread-51]: id: 39ed70b5-ba13-4318-84f2-71963a8db09b message: java.lang.NullPointerException
+	at dao.CustomerDaoImpl.getCustomerById(CustomerDaoImpl.java:86)
+	at GetCustomerById_getCustomerByID$1.evaluate(GetCustomerById_getCustomerByID.java:42)
+	at ua.com.integrity.JavaComputeNode.evaluate(JavaComputeNode.java:85)
+	at com.ibm.broker.javacompute.MbRuntimeJavaComputeNode.evaluate(MbRuntimeJavaComputeNode.java:364)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:1453)
+ 
+[12/10/2020-14:09:52:551] INFO  [Thread-53]: id: 0432ea02-31f9-4ec4-8a62-b5fc6eea682e message: customerid 5 
+[12/10/2020-14:09:52:556] TRACE [Thread-53]: id: 0432ea02-31f9-4ec4-8a62-b5fc6eea682e message: java.lang.NullPointerException
+	at dao.CustomerDaoImpl.getCustomerById(CustomerDaoImpl.java:86)
+	at GetCustomerById_getCustomerByID$1.evaluate(GetCustomerById_getCustomerByID.java:42)
+	at ua.com.integrity.JavaComputeNode.evaluate(JavaComputeNode.java:85)
+	at com.ibm.broker.javacompute.MbRuntimeJavaComputeNode.evaluate(MbRuntimeJavaComputeNode.java:364)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:1453)
+ 
+[12/10/2020-14:17:17:556] INFO  [Thread-54]: id: ad0c4bd8-830d-40ba-97db-6500a4e4124d message: customerid 9 
+[12/10/2020-14:17:23:604] INFO  [Thread-55]: id: f05eacf9-018c-4795-870b-5a3b81042fd2 message: customerid 5 
+[12/10/2020-14:17:23:610] TRACE [Thread-55]: id: f05eacf9-018c-4795-870b-5a3b81042fd2 message: java.lang.NullPointerException
+	at dao.CustomerDaoImpl.getCustomerById(CustomerDaoImpl.java:86)
+	at GetCustomerById_getCustomerByID$1.evaluate(GetCustomerById_getCustomerByID.java:42)
+	at ua.com.integrity.JavaComputeNode.evaluate(JavaComputeNode.java:85)
+	at com.ibm.broker.javacompute.MbRuntimeJavaComputeNode.evaluate(MbRuntimeJavaComputeNode.java:364)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:1453)
+ 
+[12/10/2020-14:19:50:547] INFO  [Thread-56]: id: 82d7f8c9-13d3-4874-b487-ae167dcb841a message: customerid 5 
+[12/10/2020-14:21:03:725] INFO  [Thread-58]: id: c7106215-4674-4dd7-aab5-c5bfa5a59c22 message: customerid 5 
+[12/10/2020-14:21:03:732] TRACE [Thread-58]: id: c7106215-4674-4dd7-aab5-c5bfa5a59c22 message: java.lang.NullPointerException
+	at dao.CustomerDaoImpl.getCustomerById(CustomerDaoImpl.java:86)
+	at GetCustomerById_getCustomerByID$1.evaluate(GetCustomerById_getCustomerByID.java:42)
+	at ua.com.integrity.JavaComputeNode.evaluate(JavaComputeNode.java:85)
+	at com.ibm.broker.javacompute.MbRuntimeJavaComputeNode.evaluate(MbRuntimeJavaComputeNode.java:364)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:1453)
+ 
+[12/10/2020-14:22:05:421] INFO  [Thread-60]: id: e1696723-1e2e-483a-911c-341558361554 message: customerid 5 
+[12/10/2020-14:34:14:582] INFO  [Thread-65]: id: a3665de7-9792-49e1-b357-3e2e5c37b181 message: customerid 5 
+[12/10/2020-15:15:51:575] INFO  [Thread-66]: id: c650ab5d-4d66-49ed-a640-1f6fbe5d41ab message: customerName kenan 
+[12/10/2020-15:21:11:252] INFO  [Thread-45]: id: 4e3bad2e-900a-410b-a13c-1586729ed605 message: customerName kenan 
+[12/10/2020-15:21:11:623] TRACE [Thread-45]: id: 4e3bad2e-900a-410b-a13c-1586729ed605 message: java.sql.SQLException: ORA-06550: Строка 1, столбец 7:
+PLS-00306: ошибочно число или типы аргументов при обращении к 'GETORDERBYCUSTOMER'
+ORA-06550: Строка 1, столбец 7:
+PL/SQL: Statement ignored
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1059)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:522)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:257)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:587)
+	at oracle.jdbc.driver.T4CCallableStatement.doOall8(T4CCallableStatement.java:220)
+	at oracle.jdbc.driver.T4CCallableStatement.doOall8(T4CCallableStatement.java:48)
+	at oracle.jdbc.driver.T4CCallableStatement.executeForRows(T4CCallableStatement.java:938)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1150)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:4798)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:4901)
+	at oracle.jdbc.driver.OracleCallableStatement.execute(OracleCallableStatement.java:5631)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1385)
+	at dao.OrderDaoImpl.getOrdersByCustomerName(OrderDaoImpl.java:139)
+	at GetOrders_getAllOrders$1.evaluate(GetOrders_getAllOrders.java:44)
+	at ua.com.integrity.JavaComputeNode.evaluate(JavaComputeNode.java:85)
+	at com.ibm.broker.javacompute.MbRuntimeJavaComputeNode.evaluate(MbRuntimeJavaComputeNode.java:364)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:1453)
+ 
+[12/10/2020-15:25:49:782] INFO  [Thread-45]: id: 4eb55da0-0dd9-4b8c-b4e1-e98ae4d79ff0 message: customerName kenan 
+[12/10/2020-15:25:50:121] TRACE [Thread-45]: id: 4eb55da0-0dd9-4b8c-b4e1-e98ae4d79ff0 message: java.sql.SQLException: ORA-06550: Строка 1, столбец 25:
+PLS-00302: компонента 'GETORDERBYCUSTOMERNAME' должна быть объявлена
+ORA-06550: Строка 1, столбец 7:
+PL/SQL: Statement ignored
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1059)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:522)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:257)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:587)
+	at oracle.jdbc.driver.T4CCallableStatement.doOall8(T4CCallableStatement.java:220)
+	at oracle.jdbc.driver.T4CCallableStatement.doOall8(T4CCallableStatement.java:48)
+	at oracle.jdbc.driver.T4CCallableStatement.executeForRows(T4CCallableStatement.java:938)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1150)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:4798)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:4901)
+	at oracle.jdbc.driver.OracleCallableStatement.execute(OracleCallableStatement.java:5631)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1385)
+	at dao.OrderDaoImpl.getOrdersByCustomerName(OrderDaoImpl.java:139)
+	at GetOrders_getAllOrders$1.evaluate(GetOrders_getAllOrders.java:44)
+	at ua.com.integrity.JavaComputeNode.evaluate(JavaComputeNode.java:85)
+	at com.ibm.broker.javacompute.MbRuntimeJavaComputeNode.evaluate(MbRuntimeJavaComputeNode.java:364)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:1453)
+ 
+[12/10/2020-15:29:25:097] INFO  [Thread-51]: id: 60e03752-a28b-4279-84e4-855e15cd1750 message: customerName kenan 
+[12/10/2020-15:29:25:103] TRACE [Thread-51]: id: 60e03752-a28b-4279-84e4-855e15cd1750 message: java.sql.SQLException: ORA-06550: Строка 1, столбец 25:
+PLS-00302: компонента 'GETORDERBYCUSTOMERNAME' должна быть объявлена
+ORA-06550: Строка 1, столбец 7:
+PL/SQL: Statement ignored
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1059)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:522)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:257)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:587)
+	at oracle.jdbc.driver.T4CCallableStatement.doOall8(T4CCallableStatement.java:220)
+	at oracle.jdbc.driver.T4CCallableStatement.doOall8(T4CCallableStatement.java:48)
+	at oracle.jdbc.driver.T4CCallableStatement.executeForRows(T4CCallableStatement.java:938)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1150)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:4798)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:4901)
+	at oracle.jdbc.driver.OracleCallableStatement.execute(OracleCallableStatement.java:5631)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1385)
+	at dao.OrderDaoImpl.getOrdersByCustomerName(OrderDaoImpl.java:139)
+	at GetOrders_getAllOrders$1.evaluate(GetOrders_getAllOrders.java:44)
+	at ua.com.integrity.JavaComputeNode.evaluate(JavaComputeNode.java:85)
+	at com.ibm.broker.javacompute.MbRuntimeJavaComputeNode.evaluate(MbRuntimeJavaComputeNode.java:364)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:1453)
+ 
+[12/10/2020-15:39:53:131] INFO  [Thread-52]: id: d239de64-5e39-40d0-ae7a-2fc6a126220c message: customerName kenan 
+[12/10/2020-15:39:53:135] TRACE [Thread-52]: id: d239de64-5e39-40d0-ae7a-2fc6a126220c message: java.sql.SQLException: ORA-06550: Строка 1, столбец 25:
+PLS-00302: компонента 'GETORDERBYCUSTOMERNAME' должна быть объявлена
+ORA-06550: Строка 1, столбец 7:
+PL/SQL: Statement ignored
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1059)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:522)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:257)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:587)
+	at oracle.jdbc.driver.T4CCallableStatement.doOall8(T4CCallableStatement.java:220)
+	at oracle.jdbc.driver.T4CCallableStatement.doOall8(T4CCallableStatement.java:48)
+	at oracle.jdbc.driver.T4CCallableStatement.executeForRows(T4CCallableStatement.java:938)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1150)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:4798)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:4901)
+	at oracle.jdbc.driver.OracleCallableStatement.execute(OracleCallableStatement.java:5631)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1385)
+	at dao.OrderDaoImpl.getOrdersByCustomerName(OrderDaoImpl.java:139)
+	at GetOrders_getAllOrders$1.evaluate(GetOrders_getAllOrders.java:44)
+	at ua.com.integrity.JavaComputeNode.evaluate(JavaComputeNode.java:85)
+	at com.ibm.broker.javacompute.MbRuntimeJavaComputeNode.evaluate(MbRuntimeJavaComputeNode.java:364)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:1453)
+ 
+[12/10/2020-15:42:28:935] INFO  [Thread-53]: id: 34f90744-bb34-434e-9012-af13d8ba2b8d message: customerName kenan 
+[12/10/2020-15:42:28:937] TRACE [Thread-53]: id: 34f90744-bb34-434e-9012-af13d8ba2b8d message: java.sql.SQLException: операция недопустима: Ordinal binding and Named binding cannot be combined!
+	at oracle.jdbc.driver.OracleCallableStatement.execute(OracleCallableStatement.java:5626)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1385)
+	at dao.OrderDaoImpl.getOrdersByCustomerName(OrderDaoImpl.java:139)
+	at GetOrders_getAllOrders$1.evaluate(GetOrders_getAllOrders.java:44)
+	at ua.com.integrity.JavaComputeNode.evaluate(JavaComputeNode.java:85)
+	at com.ibm.broker.javacompute.MbRuntimeJavaComputeNode.evaluate(MbRuntimeJavaComputeNode.java:364)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:1453)
+ 
+[12/10/2020-15:43:33:522] INFO  [Thread-55]: id: f487fddc-a035-4977-ac47-b70f5922122c message: customerName kenan 
+[12/10/2020-15:43:33:528] TRACE [Thread-55]: id: f487fddc-a035-4977-ac47-b70f5922122c message: java.sql.SQLException: ORA-06550: Строка 1, столбец 25:
+PLS-00302: компонента 'GETORDERBYCUSTOMERNAME' должна быть объявлена
+ORA-06550: Строка 1, столбец 7:
+PL/SQL: Statement ignored
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1059)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:522)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:257)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:587)
+	at oracle.jdbc.driver.T4CCallableStatement.doOall8(T4CCallableStatement.java:220)
+	at oracle.jdbc.driver.T4CCallableStatement.doOall8(T4CCallableStatement.java:48)
+	at oracle.jdbc.driver.T4CCallableStatement.executeForRows(T4CCallableStatement.java:938)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1150)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:4798)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:4901)
+	at oracle.jdbc.driver.OracleCallableStatement.execute(OracleCallableStatement.java:5631)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1385)
+	at dao.OrderDaoImpl.getOrdersByCustomerName(OrderDaoImpl.java:139)
+	at GetOrders_getAllOrders$1.evaluate(GetOrders_getAllOrders.java:44)
+	at ua.com.integrity.JavaComputeNode.evaluate(JavaComputeNode.java:85)
+	at com.ibm.broker.javacompute.MbRuntimeJavaComputeNode.evaluate(MbRuntimeJavaComputeNode.java:364)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:1453)
+ 
+[12/10/2020-15:45:57:360] INFO  [Thread-56]: id: 88eacca1-7dcd-44ce-9d3c-3d110754fdd4 message: customerName kenan 
+[12/10/2020-15:45:57:364] TRACE [Thread-56]: id: 88eacca1-7dcd-44ce-9d3c-3d110754fdd4 message: java.sql.SQLException: ORA-06550: Строка 1, столбец 25:
+PLS-00302: компонента 'GETORDERBYCUSTOMERNAME' должна быть объявлена
+ORA-06550: Строка 1, столбец 7:
+PL/SQL: Statement ignored
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1059)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:522)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:257)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:587)
+	at oracle.jdbc.driver.T4CCallableStatement.doOall8(T4CCallableStatement.java:220)
+	at oracle.jdbc.driver.T4CCallableStatement.doOall8(T4CCallableStatement.java:48)
+	at oracle.jdbc.driver.T4CCallableStatement.executeForRows(T4CCallableStatement.java:938)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1150)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:4798)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:4901)
+	at oracle.jdbc.driver.OracleCallableStatement.execute(OracleCallableStatement.java:5631)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1385)
+	at dao.OrderDaoImpl.getOrdersByCustomerName(OrderDaoImpl.java:139)
+	at GetOrders_getAllOrders$1.evaluate(GetOrders_getAllOrders.java:44)
+	at ua.com.integrity.JavaComputeNode.evaluate(JavaComputeNode.java:85)
+	at com.ibm.broker.javacompute.MbRuntimeJavaComputeNode.evaluate(MbRuntimeJavaComputeNode.java:364)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:1453)
+ 
+[12/10/2020-15:48:55:938] INFO  [Thread-44]: id: e26f8bd6-4f26-4de8-8cd6-e7b56bd6581d message: customerName kenan 
+[12/10/2020-15:48:56:310] TRACE [Thread-44]: id: e26f8bd6-4f26-4de8-8cd6-e7b56bd6581d message: java.sql.SQLException: ORA-06550: Строка 1, столбец 25:
+PLS-00302: компонента 'GETORDERBYCUSTOMERNAME' должна быть объявлена
+ORA-06550: Строка 1, столбец 7:
+PL/SQL: Statement ignored
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1059)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:522)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:257)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:587)
+	at oracle.jdbc.driver.T4CCallableStatement.doOall8(T4CCallableStatement.java:220)
+	at oracle.jdbc.driver.T4CCallableStatement.doOall8(T4CCallableStatement.java:48)
+	at oracle.jdbc.driver.T4CCallableStatement.executeForRows(T4CCallableStatement.java:938)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1150)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:4798)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:4901)
+	at oracle.jdbc.driver.OracleCallableStatement.execute(OracleCallableStatement.java:5631)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1385)
+	at dao.OrderDaoImpl.getOrdersByCustomerName(OrderDaoImpl.java:139)
+	at GetOrders_getAllOrders$1.evaluate(GetOrders_getAllOrders.java:44)
+	at ua.com.integrity.JavaComputeNode.evaluate(JavaComputeNode.java:85)
+	at com.ibm.broker.javacompute.MbRuntimeJavaComputeNode.evaluate(MbRuntimeJavaComputeNode.java:364)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:1453)
+ 
+[12/10/2020-15:55:10:655] INFO  [Thread-50]: id: 46bb3078-b5b7-47df-a164-0b98e01f0e2e message: customerName kenan 
+[12/10/2020-15:55:55:742] INFO  [Thread-51]: id: dbf0c386-88d7-4f1b-8834-86ca83081f8d message: customerName 'kenan' 
+[12/10/2020-15:56:13:146] INFO  [Thread-50]: id: 785f4f6a-4141-4faf-b574-6830ff1cad38 message: customerName 'namiq' 
+[12/10/2020-15:59:36:146] INFO  [Thread-51]: id: 92bdbfee-9e2e-44a3-869a-c278244fdb73 message: customerName 'kenan' 
+[12/10/2020-16:03:02:238] INFO  [Thread-50]: id: 4ab7c424-9909-49fb-8aee-a914550cdbc1 message: customerName 'Kenan' 
+[12/10/2020-16:03:09:034] INFO  [Thread-51]: id: ca8a2e34-5e3f-4061-8af3-74091a15da54 message: customerName Kenan 
+[12/10/2020-16:06:59:249] INFO  [Thread-52]: id: 34b53547-0af1-4de7-9a8f-144359eea019 message: customerName Kenan 
+[12/10/2020-16:07:05:815] TRACE [Thread-53]: id: 7b9d7b9e-2e62-4d8b-96e0-fc1f8b6f17ad message: java.lang.NullPointerException
+	at GetOrders_getAllOrders$1.evaluate(GetOrders_getAllOrders.java:39)
+	at ua.com.integrity.JavaComputeNode.evaluate(JavaComputeNode.java:85)
+	at com.ibm.broker.javacompute.MbRuntimeJavaComputeNode.evaluate(MbRuntimeJavaComputeNode.java:364)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:1453)
+ 
+[12/10/2020-16:10:22:632] TRACE [Thread-54]: id: 042ce745-0576-4359-ba2a-4097d2c25dd0 message: java.lang.NullPointerException
+	at GetOrders_getAllOrders$1.evaluate(GetOrders_getAllOrders.java:39)
+	at ua.com.integrity.JavaComputeNode.evaluate(JavaComputeNode.java:85)
+	at com.ibm.broker.javacompute.MbRuntimeJavaComputeNode.evaluate(MbRuntimeJavaComputeNode.java:364)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:1453)
+ 
+[12/10/2020-16:17:36:777] INFO  [Thread-57]: id: 80656972-510c-4da5-831d-df66285b49b8 message: customerName Kenan 
+[12/10/2020-16:17:41:998] INFO  [Thread-56]: id: 0e27625b-0978-4949-90c4-354e5ef3438f message: customerName NULL 
+[12/10/2020-16:19:37:811] INFO  [Thread-58]: id: 7b864ce8-5be8-45bf-b202-823a005bfe86 message: customerName NULL 
+[12/10/2020-16:19:43:144] INFO  [Thread-59]: id: 6fd13bde-1ef6-4e2d-ba79-be18153abd9d message: customerName NULL 
+[12/10/2020-16:22:19:135] INFO  [Thread-60]: id: bc1cd881-966c-4016-96ac-48178761ad75 message: customerName NULL 
+[12/10/2020-16:24:28:065] INFO  [Thread-61]: id: 787ffcd7-2944-4fdb-9b83-d5047b06b3df message: customerName Kenan 
+[12/10/2020-16:24:40:127] INFO  [Thread-61]: id: 63d179b3-7f45-4655-9b64-2aea6f05a9f0 message: customerName Kenan 
+[12/10/2020-16:24:51:363] INFO  [Thread-62]: id: e49a58b2-5034-4deb-8401-003e8c8785cf message: customerName Kenan 
+[12/10/2020-16:33:16:742] INFO  [Thread-66]: id: 9516aa43-4102-422b-8592-495c3952e29f message: customerName Kenan 
+[12/10/2020-16:34:47:352] TRACE [Thread-67]: id: fd054e62-93b3-44f2-a4e7-3531e05fc376 message: java.lang.NullPointerException
+	at GetOrders_getAllOrders$1.evaluate(GetOrders_getAllOrders.java:50)
+	at ua.com.integrity.JavaComputeNode.evaluate(JavaComputeNode.java:85)
+	at com.ibm.broker.javacompute.MbRuntimeJavaComputeNode.evaluate(MbRuntimeJavaComputeNode.java:364)
+	at com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:1453)
+ 
+[12/10/2020-16:37:18:942] INFO  [Thread-69]: id: 1959849c-902e-4792-b492-f477d9d25c84 message: MbElement : null 
+[12/10/2020-16:39:02:808] INFO  [Thread-71]: id: ec7c3c41-804a-4369-913e-bf085823b5e7 message: MbElement : null 
+[12/10/2020-16:40:17:734] INFO  [Thread-73]: id: 8a0adae4-2f15-42c1-bf80-f51475db2692 message: MbElement : null 
+[12/10/2020-16:40:41:708] INFO  [Thread-74]: id: da362758-b57d-4924-9a43-80e59d2d368f message: customerName NULL 
+[12/10/2020-16:43:52:308] INFO  [Thread-75]: id: cd41582b-fc5f-4d5b-a917-552dda506144 message: customerName NULL 
+[12/10/2020-16:45:05:239] INFO  [Thread-76]: id: 5bc1feb1-53c1-41b7-957a-af811063d711 message: customerName NULL 
+[12/10/2020-16:45:10:394] INFO  [Thread-75]: id: 0842f6b8-23ef-4016-93d2-744a0527afe8 message: customerName Kenan 
+[12/10/2020-16:45:17:222] INFO  [Thread-76]: id: e8fd0ca6-32c1-4e57-83b8-c4f1c7061988 message: MbElement : null 

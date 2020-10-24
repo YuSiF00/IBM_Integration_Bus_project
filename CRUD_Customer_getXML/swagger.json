@@ -1,0 +1,41 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "title" : "CRUD_Customer_getXML",
+    "version" : "1.0.0",
+    "description" : "CRUD_Customer_getXML"
+  },
+  "paths" : {
+    "/customersByXML" : {
+      "get" : {
+        "operationId" : "getCustomers",
+        "responses" : {
+          "200" : {
+            "description" : "The operation was successful.",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        },
+        "produces" : [ "application/json" ],
+        "description" : "Retrieve customers"
+      }
+    },
+    "/customers" : {
+      "get" : {
+        "operationId" : "getCustomers1",
+        "responses" : {
+          "200" : {
+            "description" : "The operation was successful.",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        },
+        "produces" : [ "application/json" ],
+        "description" : "Retrieve customers"
+      }
+    }
+  },
+  "basePath" : "/crud_customer_getxml/v1"
+}

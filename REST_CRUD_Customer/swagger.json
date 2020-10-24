@@ -1,0 +1,353 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "title" : "REST_CRUD_Customer",
+    "version" : "1.0.0",
+    "description" : "REST_CRUD_Customer"
+  },
+  "paths" : {
+    "/customers" : {
+      "get" : {
+        "operationId" : "getAllCustomers",
+        "responses" : {
+          "200" : {
+            "description" : "The operation was successful.",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        },
+        "produces" : [ "application/json" ],
+        "description" : "Retrieve customers"
+      },
+      "put" : {
+        "operationId" : "putCustomers",
+        "responses" : {
+          "200" : {
+            "description" : "The operation was successful.",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        },
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "description" : "Update customers",
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "schema" : {
+            "type" : "string"
+          },
+          "description" : "The request body for the operation",
+          "required" : true
+        } ]
+      },
+      "post" : {
+        "operationId" : "postCustomers",
+        "responses" : {
+          "200" : {
+            "description" : "The operation was successful.",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        },
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "description" : "Insert a customers",
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "schema" : {
+            "type" : "string"
+          },
+          "description" : "The request body for the operation",
+          "required" : true
+        } ]
+      }
+    },
+    "/customer/{id}" : {
+      "delete" : {
+        "operationId" : "deleteCustomerById",
+        "responses" : {
+          "200" : {
+            "description" : "The operation was successful.",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        },
+        "produces" : [ "application/json" ],
+        "description" : "Remove from id",
+        "parameters" : [ {
+          "required" : true,
+          "name" : "id",
+          "in" : "path",
+          "type" : "string"
+        } ]
+      },
+      "get" : {
+        "operationId" : "getCustomerById",
+        "responses" : {
+          "200" : {
+            "description" : "The operation was successful.",
+            "schema" : {
+              "type" : "boolean"
+            }
+          }
+        },
+        "produces" : [ "application/json" ],
+        "description" : "Retrieve id",
+        "parameters" : [ {
+          "required" : true,
+          "name" : "id",
+          "in" : "path",
+          "type" : "string"
+        } ]
+      }
+    },
+    "/orders" : {
+      "get" : {
+        "operationId" : "getOrders",
+        "responses" : {
+          "200" : {
+            "description" : "The operation was successful.",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        },
+        "produces" : [ "application/json" ],
+        "description" : "Retrieve orders",
+        "parameters" : [ {
+          "name" : "customerName",
+          "in" : "query",
+          "type" : "string",
+          "required" : false
+        } ]
+      }
+    },
+    "/order/{id}" : {
+      "delete" : {
+        "operationId" : "deleteId",
+        "responses" : {
+          "200" : {
+            "description" : "The operation was successful."
+          }
+        },
+        "produces" : [ "application/json" ],
+        "description" : "Remove from id",
+        "parameters" : [ {
+          "required" : true,
+          "name" : "id",
+          "in" : "path",
+          "type" : "string"
+        } ]
+      }
+    },
+    "/customer/{id}/order" : {
+      "post" : {
+        "operationId" : "postOrder",
+        "responses" : {
+          "200" : {
+            "description" : "The operation was successful."
+          }
+        },
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "description" : "Insert a order",
+        "parameters" : [ {
+          "required" : true,
+          "name" : "id",
+          "in" : "path",
+          "type" : "string"
+        }, {
+          "name" : "body",
+          "in" : "body",
+          "schema" : {
+            "type" : "string"
+          },
+          "description" : "The request body for the operation",
+          "required" : true
+        } ]
+      },
+      "put" : {
+        "operationId" : "putOrder",
+        "responses" : {
+          "200" : {
+            "description" : "The operation was successful."
+          }
+        },
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "description" : "Update order",
+        "parameters" : [ {
+          "required" : true,
+          "name" : "id",
+          "in" : "path",
+          "type" : "integer"
+        }, {
+          "name" : "body",
+          "in" : "body",
+          "schema" : {
+            "type" : "string"
+          },
+          "description" : "The request body for the operation",
+          "required" : true
+        } ]
+      },
+      "get" : {
+        "operationId" : "getOrder",
+        "responses" : {
+          "200" : {
+            "description" : "The operation was successful.",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        },
+        "produces" : [ "application/json" ],
+        "description" : "Retrieve order",
+        "parameters" : [ {
+          "required" : true,
+          "name" : "id",
+          "in" : "path",
+          "type" : "string"
+        } ]
+      }
+    },
+    "/accounts" : {
+      "get" : {
+        "operationId" : "getAccounts",
+        "responses" : {
+          "200" : {
+            "description" : "The operation was successful.",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        },
+        "produces" : [ "application/json" ],
+        "description" : "Retrieve accounts",
+        "parameters" : [ {
+          "name" : "customerName",
+          "in" : "query",
+          "type" : "string"
+        } ]
+      }
+    },
+    "/account/{id}" : {
+      "delete" : {
+        "operationId" : "deleteAccountById",
+        "responses" : {
+          "200" : {
+            "description" : "The operation was successful."
+          }
+        },
+        "produces" : [ "application/json" ],
+        "description" : "Remove from id",
+        "parameters" : [ {
+          "required" : true,
+          "name" : "id",
+          "in" : "path",
+          "type" : "string"
+        } ]
+      }
+    },
+    "/customer/{id}/account" : {
+      "get" : {
+        "operationId" : "getAccount",
+        "responses" : {
+          "200" : {
+            "description" : "The operation was successful.",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        },
+        "produces" : [ "application/json" ],
+        "description" : "Retrieve account",
+        "parameters" : [ {
+          "required" : true,
+          "name" : "id",
+          "in" : "path",
+          "type" : "string"
+        } ]
+      },
+      "post" : {
+        "operationId" : "postAccount",
+        "responses" : {
+          "200" : {
+            "description" : "The operation was successful."
+          }
+        },
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "description" : "Insert a account",
+        "parameters" : [ {
+          "required" : true,
+          "name" : "id",
+          "in" : "path",
+          "type" : "string"
+        }, {
+          "name" : "body",
+          "in" : "body",
+          "schema" : {
+            "type" : "integer"
+          },
+          "description" : "The request body for the operation",
+          "required" : true
+        } ]
+      },
+      "put" : {
+        "operationId" : "putAccount",
+        "responses" : {
+          "200" : {
+            "description" : "The operation was successful."
+          }
+        },
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "description" : "Update account",
+        "parameters" : [ {
+          "required" : true,
+          "name" : "id",
+          "in" : "path",
+          "type" : "string"
+        }, {
+          "name" : "body",
+          "in" : "body",
+          "schema" : {
+            "type" : "integer"
+          },
+          "description" : "The request body for the operation",
+          "required" : true
+        } ]
+      }
+    },
+    "/accounts/makeTransaction" : {
+      "post" : {
+        "operationId" : "postMakeTransaction",
+        "responses" : {
+          "200" : {
+            "description" : "The operation was successful."
+          }
+        },
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "description" : "Insert a makeTransaction",
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "schema" : {
+            "type" : "string"
+          },
+          "description" : "The request body for the operation",
+          "required" : true
+        } ]
+      }
+    }
+  },
+  "basePath" : "/rest_crud_customer/v1"
+}

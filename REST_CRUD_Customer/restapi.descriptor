@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:restapiDescriptor xmlns="http://com.ibm.etools.mft.descriptor.base" xmlns:ns2="http://com.ibm.etools.mft.descriptor.restapi" definitionType="swagger_20" definitionFile="swagger.json" implementation="gen/REST_CRUD_Customer.msgflow" https="false">
+    <ns2:operations>
+        <ns2:operation name="deleteAccountById" implementation="deleteAccountById.subflow"/>
+        <ns2:operation name="deleteCustomerById" implementation="deleteCustomerById.subflow"/>
+        <ns2:operation name="deleteId" implementation="deleteId.subflow"/>
+        <ns2:operation name="getAccount" implementation="getAccount.subflow"/>
+        <ns2:operation name="getAccounts" implementation="getAccounts.subflow"/>
+        <ns2:operation name="getAllCustomers" implementation="getAllCustomers.subflow"/>
+        <ns2:operation name="getCustomerById" implementation="getCustomerById.subflow"/>
+        <ns2:operation name="getOrder" implementation="getOrder.subflow"/>
+        <ns2:operation name="getOrders" implementation="getOrders.subflow"/>
+        <ns2:operation name="postAccount" implementation="postAccount.subflow"/>
+        <ns2:operation name="postCustomers" implementation="postCustomers.subflow"/>
+        <ns2:operation name="postMakeTransaction" implementation="postMakeTransaction.subflow"/>
+        <ns2:operation name="postOrder" implementation="postOrder.subflow"/>
+        <ns2:operation name="putAccount" implementation="putAccount.subflow"/>
+        <ns2:operation name="putCustomers" implementation="putCustomers.subflow"/>
+        <ns2:operation name="putOrder" implementation="putOrder.subflow"/>
+    </ns2:operations>
+    <ns2:errorHandlers/>
+</ns2:restapiDescriptor>
